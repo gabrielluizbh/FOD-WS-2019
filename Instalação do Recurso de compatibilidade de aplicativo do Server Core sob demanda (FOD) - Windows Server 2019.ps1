@@ -1,24 +1,24 @@
-# Script para instalação do Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) - Créditos Gabriel Luiz - www.gabrielluiz.com e www.cooperati.com.br #
+# Script para instalaÃ§Ã£o do Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) - CrÃ©ditos Gabriel Luiz - www.gabrielluiz.com e www.cooperati.com.br #
 
 
-# Instslação usando o Windows Update.
+# InstalaÃ§Ã£o usando o Windows Update.
 
 Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 # # Instala o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) usando o Windows Update.
 
 
-Restart-Computer # Renicie o servidor.
+Restart-Computer # Reinicie o servidor.
 
 
-# Instalação usando ISO.
+# InstalaÃ§Ã£o usando ISO.
 
-Install-WindowsFeature File-Services # Instala Função de File Server.
+Install-WindowsFeature File-Services # Instala FunÃ§Ã£o de File Server.
 
-# Observações: Ajuda para copiar a ISO do FOD para o servidor.
+# ObservaÃ§Ãµes: Ajuda para copiar a ISO do FOD para o servidor.
 
 
 Mount-DiskImage -ImagePath c:\FOD.iso # Monta a imagem da iso utilizando este comando.
 
-# Observações: A ISO foi copiada para unidade c:\ e seu nome alterador para FOD.iso.
+# ObservaÃ§Ãµes: A ISO foi copiada para unidade c:\ e seu nome alterador para FOD.iso.
 
 
 Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 -Source E:\ -LimitAccess # Instala o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) usando uma ISO que foi montada na unidade E:\.
@@ -27,10 +27,10 @@ Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 -Sour
 Restart-Computer # Renicie o servidor.
 
 
-# Logo abaixo estão a maioria das opções que podem ser abertos com o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) instalado.
+# Logo abaixo estÃ£o a maioria das opÃ§Ãµes que podem ser abertos com o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) instalado.
 
 
-ncpa.cpl  # Conexões de Rede.
+ncpa.cpl  # ConexÃµes de Rede.
 
 inetcpl.cpl # Propriedades de Internet.
 
@@ -52,4 +52,4 @@ Diskmgmt.msc # Gerenciamento de disco.
 
 CluAdmin.msc # Gerenciador de Cluster de failover.
 
-lusrmgr.msc # Usuários e Grupos Locais.
+lusrmgr.msc # UsuÃ¡rios e Grupos Locais.
