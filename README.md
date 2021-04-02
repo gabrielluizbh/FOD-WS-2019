@@ -1,4 +1,4 @@
-# FOD-WS-2019
+# FOD (recurso sob demanda) de compatibilidade de aplicativos do Server Core
 
 Instalação do Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) - Windows Server 2019
 
