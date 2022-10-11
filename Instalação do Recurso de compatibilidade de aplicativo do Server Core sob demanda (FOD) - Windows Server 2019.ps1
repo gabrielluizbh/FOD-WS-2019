@@ -3,7 +3,7 @@
 
 # Instalação usando o Windows Update.
 
-Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 # # Instala o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) usando o Windows Update.
+Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 # Instala o Recurso de compatibilidade de aplicativo do Server Core sob demanda (FOD) usando o Windows Update.
 
 
 Restart-Computer # Reinicie o servidor.
